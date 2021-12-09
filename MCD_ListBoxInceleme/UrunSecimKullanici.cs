@@ -39,12 +39,12 @@ namespace MCD_ListBoxInceleme
             Urun u1 = btn.Tag as Urun;
             Form f1 = Application.OpenForms["Form1"];
             GroupBox f1gBox = (GroupBox)f1.Controls["groupBox1"];
-            ((PictureBox)f1.Controls["pctUrunResim"]).Image = Image.FromFile(u1.urunResim);
-            ((TextBox)f1.Controls["txtUrunAdi"]).Text = u1.urunAdi;
-            ((TextBox)f1.Controls["txtKategori"]).Text = u1.urunKategori;
-            ((TextBox)f1.Controls["txtStokAdet"]).Text = u1.stokAdet.ToString();
-            ((TextBox)f1.Controls["txtYazar"]).Text = u1.yazar;
-            ((TextBox)f1.Controls["txtAciklama"]).Text = u1.aciklama;
+            ((PictureBox)f1gBox.Controls["pctUrunResim"]).Image = Image.FromFile(u1.urunResim);
+            ((TextBox)f1gBox.Controls["txtUrunAdi"]).Text = u1.urunAdi;
+            ((TextBox)f1gBox.Controls["txtUrunKategori"]).Text = u1.urunKategori;
+            ((TextBox)f1gBox.Controls["txtStokAdet"]).Text = u1.stokAdet.ToString();
+            ((TextBox)f1gBox.Controls["txtYazar"]).Text = u1.yazar;
+            ((TextBox)f1gBox.Controls["txtAciklama"]).Text = u1.aciklama;
             this.Close();
             
         }

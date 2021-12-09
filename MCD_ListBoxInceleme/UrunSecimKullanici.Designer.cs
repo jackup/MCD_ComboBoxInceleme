@@ -70,7 +70,7 @@ namespace MCD_ListBoxInceleme
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1155, 615);
+            this.ClientSize = new System.Drawing.Size(899, 557);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.btnKapat);
             this.Controls.Add(this.label1);

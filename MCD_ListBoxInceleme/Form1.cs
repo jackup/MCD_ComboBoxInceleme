@@ -50,6 +50,21 @@ namespace MCD_ListBoxInceleme
                 txtYazar.Text = u1.yazar;
                 txtAciklama.Text = u1.aciklama;
             }
+            else if (urunSecimAdet > 1)
+            {
+                List<Urun> secilenUrunListe = new List<Urun>();
+                foreach (var item in lstUrunler.SelectedItems)
+                {
+                    secilenUrunListe.Add(item as Urun);
+                }
+
+                UrunSecimKullanici secimKullanici = new UrunSecimKullanici(secilenUrunListe.ToArray());
+                secimKullanici.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Lütfen Görmek İstediğiniz Ürünü Seçiniz.", "Bilgilendirme", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
         private void Form1_Load_1(object sender, EventArgs e)
